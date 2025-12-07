@@ -1,4 +1,3 @@
-````markdown
 # 🌌 Astronomik Nesne Sınıflandırıcı (Astro Classifier)
 
 > **Derin uzay fotoğraflarını analiz eden, gök cisimlerini tespit edip sınıflandıran Yapay Zeka destekli Full-Stack web uygulaması.**
@@ -51,9 +50,8 @@ Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 ### 1. Depoyu Klonlayın
 
 ```bash
-git clone [https://github.com/KULLANICI_ADINIZ/astro-siniflandirici.git](https://github.com/KULLANICI_ADINIZ/astro-siniflandirici.git)
+git clone https://github.com/KULLANICI_ADINIZ/astro-siniflandirici.git
 cd astro-siniflandirici
-````
 
 ### 2\. Backend Kurulumu (Terminal 1)
 
