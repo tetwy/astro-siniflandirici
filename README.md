@@ -45,26 +45,6 @@ Bu proje, amatör veya profesyonel astronomi fotoğraflarını işleyerek içeri
 
 ---
 
-## 📂 Proje Yapısı
-
-```text
-astro-siniflandirici/
-├── backend/                 # Python API ve AI Modelleri
-│   ├── assets/              # Eğitim için ham görüntüler
-│   ├── models/              # Eğitilmiş .joblib modelleri (v2)
-│   ├── outputs/             # Debug görüntüleri ve özellik çıktıları
-│   ├── image_service.py     # Flask API Sunucusu (Giriş Noktası)
-│   ├── star_detector.py     # Görüntü İşleme Modülü
-│   ├── model_egitici.py     # Model Eğitim Scripti
-│   └── veri_birlestir.py    # Veri Seti Oluşturucu
-│
-├── frontend/                # React Web Arayüzü
-│   ├── src/                 # Kaynak kodlar
-│   ├── public/              # Statik dosyalar
-│   └── ...                  # Config dosyaları
-│
-└── docs/                    # Dokümantasyon görselleri
-
 ## ⚙️ Kurulum ve Çalıştırma
 
 Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin.
@@ -98,3 +78,24 @@ MIT Lisansı, bu yazılımın kopyasını alan herhangi bir kişiye; yazılımı
 2.  Yazılım "OLDUĞU GİBİ" sağlanmaktadır; ticari elverişlilik, belirli bir amaca uygunluk veya ihlal etmeme garantileri dahil ancak bunlarla sınırlı olmamak üzere açık veya zımni hiçbir garanti verilmemektedir.
 
 Daha fazla detay için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
+
+## 📂 Proje Yapısı
+
+```text
+astro-siniflandirici/
+├── backend/                 # Python API ve AI Modelleri
+│   ├── assets/              # Eğitim için ham görüntüler
+│   ├── models/              # Eğitilmiş .joblib modelleri (v2)
+│   ├── outputs/             # Debug görüntüleri ve özellik çıktıları
+│   ├── image_service.py     # Flask API Sunucusu (Giriş Noktası)
+│   ├── star_detector.py     # Görüntü İşleme Modülü
+│   ├── model_egitici.py     # Model Eğitim Scripti
+│   └── veri_birlestir.py    # Veri Seti Oluşturucu
+│
+├── frontend/                # React Web Arayüzü
+│   ├── src/                 # Kaynak kodlar
+│   ├── public/              # Statik dosyalar
+│   └── ...                  # Config dosyaları
+│
+└── docs/                    # Dokümantasyon görselleri
+
