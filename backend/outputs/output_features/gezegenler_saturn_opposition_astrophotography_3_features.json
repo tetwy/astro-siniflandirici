@@ -1,0 +1,28 @@
+[
+    {
+        "object_id": 0,
+        "bounding_box": {
+            "x": 183,
+            "y": 225,
+            "w": 135,
+            "h": 48
+        },
+        "center": {
+            "x": 250,
+            "y": 249
+        },
+        "area": 4121.0,
+        "perimeter": 610.2152923345566,
+        "circularity": 0.13907411479371606,
+        "aspect_ratio": 2.8125,
+        "solidity": 0.7775471698113208,
+        "eccentricity": 0.9433951476270614,
+        "mean_intensity_gray": 118.7425381635908,
+        "std_dev_intensity_gray": 57.586514641171455,
+        "peak_intensity_gray": 251.0,
+        "mean_b": 117.59056732740943,
+        "mean_g": 119.66438824333561,
+        "mean_r": 117.36978810663021,
+        "label": "Gezegen"
+    }
+]

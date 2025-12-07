@@ -1,0 +1,752 @@
+[
+    {
+        "object_id": 0,
+        "bounding_box": {
+            "x": 393,
+            "y": 305,
+            "w": 9,
+            "h": 5
+        },
+        "center": {
+            "x": 395,
+            "y": 307
+        },
+        "area": 12.5,
+        "perimeter": 21.899494767189026,
+        "circularity": 0.32753045303859907,
+        "aspect_ratio": 1.8,
+        "solidity": 0.625,
+        "eccentricity": 0.9027320001693161,
+        "mean_intensity_gray": 89.52173913043478,
+        "std_dev_intensity_gray": 0.9722034684784011,
+        "peak_intensity_gray": 91.0,
+        "mean_b": 75.6086956521739,
+        "mean_g": 94.08695652173913,
+        "mean_r": 86.0
+    },
+    {
+        "object_id": 1,
+        "bounding_box": {
+            "x": 348,
+            "y": 299,
+            "w": 12,
+            "h": 11
+        },
+        "center": {
+            "x": 353,
+            "y": 304
+        },
+        "area": 56.0,
+        "perimeter": 36.97056233882904,
+        "circularity": 0.5148559998696409,
+        "aspect_ratio": 1.0909090909090908,
+        "solidity": 0.7777777777777778,
+        "eccentricity": 0.45213531089591674,
+        "mean_intensity_gray": 98.05479452054794,
+        "std_dev_intensity_gray": 2.10602794969601,
+        "peak_intensity_gray": 101.0,
+        "mean_b": 84.32876712328766,
+        "mean_g": 105.08219178082192,
+        "mean_r": 89.6027397260274
+    },
+    {
+        "object_id": 2,
+        "bounding_box": {
+            "x": 411,
+            "y": 254,
+            "w": 20,
+            "h": 12
+        },
+        "center": {
+            "x": 419,
+            "y": 259
+        },
+        "area": 141.0,
+        "perimeter": 50.627416491508484,
+        "circularity": 0.6912854956219623,
+        "aspect_ratio": 1.6666666666666667,
+        "solidity": 0.9245901639344263,
+        "eccentricity": 0.8772399089868557,
+        "mean_intensity_gray": 88.90243902439025,
+        "std_dev_intensity_gray": 4.268745620567179,
+        "peak_intensity_gray": 95.0,
+        "mean_b": 83.1829268292683,
+        "mean_g": 95.65853658536585,
+        "mean_r": 77.97560975609757
+    },
+    {
+        "object_id": 3,
+        "bounding_box": {
+            "x": 487,
+            "y": 246,
+            "w": 20,
+            "h": 8
+        },
+        "center": {
+            "x": 496,
+            "y": 250
+        },
+        "area": 62.0,
+        "perimeter": 55.455843687057495,
+        "circularity": 0.2533418395719262,
+        "aspect_ratio": 2.5,
+        "solidity": 0.6391752577319587,
+        "eccentricity": 0.9477719487687918,
+        "mean_intensity_gray": 64.57471264367815,
+        "std_dev_intensity_gray": 0.9899748505814505,
+        "peak_intensity_gray": 67.0,
+        "mean_b": 60.52873563218391,
+        "mean_g": 78.63218390804597,
+        "mean_r": 38.712643678160916
+    },
+    {
+        "object_id": 4,
+        "bounding_box": {
+            "x": 325,
+            "y": 237,
+            "w": 16,
+            "h": 14
+        },
+        "center": {
+            "x": 331,
+            "y": 243
+        },
+        "area": 118.0,
+        "perimeter": 46.28427064418793,
+        "circularity": 0.6921895245229661,
+        "aspect_ratio": 1.1428571428571428,
+        "solidity": 0.8773234200743495,
+        "eccentricity": 0.44365031646227066,
+        "mean_intensity_gray": 80.14492753623189,
+        "std_dev_intensity_gray": 11.924612669331792,
+        "peak_intensity_gray": 107.0,
+        "mean_b": 82.55072463768116,
+        "mean_g": 87.55797101449275,
+        "mean_r": 64.92028985507247
+    },
+    {
+        "object_id": 5,
+        "bounding_box": {
+            "x": 426,
+            "y": 231,
+            "w": 14,
+            "h": 15
+        },
+        "center": {
+            "x": 432,
+            "y": 238
+        },
+        "area": 125.0,
+        "perimeter": 44.627416491508484,
+        "circularity": 0.7887082525598597,
+        "aspect_ratio": 0.9333333333333333,
+        "solidity": 0.9398496240601504,
+        "eccentricity": 0.7448144765481834,
+        "mean_intensity_gray": 78.3103448275862,
+        "std_dev_intensity_gray": 7.458868585164165,
+        "peak_intensity_gray": 93.0,
+        "mean_b": 77.53793103448275,
+        "mean_g": 85.87586206896552,
+        "mean_r": 63.751724137931035
+    },
+    {
+        "object_id": 6,
+        "bounding_box": {
+            "x": 432,
+            "y": 209,
+            "w": 46,
+            "h": 74
+        },
+        "center": {
+            "x": 457,
+            "y": 245
+        },
+        "area": 1328.5,
+        "perimeter": 252.83556711673737,
+        "circularity": 0.2611530413964482,
+        "aspect_ratio": 0.6216216216216216,
+        "solidity": 0.6042756424835115,
+        "eccentricity": 0.7620646749712636,
+        "mean_intensity_gray": 79.2376306620209,
+        "std_dev_intensity_gray": 4.735658190551281,
+        "peak_intensity_gray": 89.0,
+        "mean_b": 78.69756097560976,
+        "mean_g": 88.89825783972125,
+        "mean_r": 60.30801393728223
+    },
+    {
+        "object_id": 7,
+        "bounding_box": {
+            "x": 264,
+            "y": 208,
+            "w": 5,
+            "h": 5
+        },
+        "center": {
+            "x": 266,
+            "y": 209
+        },
+        "area": 9.0,
+        "perimeter": 12.485281109809875,
+        "circularity": 0.7255305822102998,
+        "aspect_ratio": 1.0,
+        "solidity": 1.0,
+        "eccentricity": 0.8264153187882225,
+        "mean_intensity_gray": 75.73333333333333,
+        "std_dev_intensity_gray": 2.719477073916197,
+        "peak_intensity_gray": 79.0,
+        "mean_b": 77.46666666666667,
+        "mean_g": 83.73333333333333,
+        "mean_r": 60.199999999999996
+    },
+    {
+        "object_id": 8,
+        "bounding_box": {
+            "x": 310,
+            "y": 201,
+            "w": 4,
+            "h": 4
+        },
+        "center": {
+            "x": 311,
+            "y": 202
+        },
+        "area": 6.5,
+        "perimeter": 10.242640614509583,
+        "circularity": 0.778573021914597,
+        "aspect_ratio": 1.0,
+        "solidity": 0.9285714285714286,
+        "eccentricity": 0.6754490728143199,
+        "mean_intensity_gray": 70.75,
+        "std_dev_intensity_gray": 0.7216878364868222,
+        "peak_intensity_gray": 72.0,
+        "mean_b": 75.75,
+        "mean_g": 76.25,
+        "mean_r": 57.25
+    },
+    {
+        "object_id": 9,
+        "bounding_box": {
+            "x": 294,
+            "y": 197,
+            "w": 7,
+            "h": 9
+        },
+        "center": {
+            "x": 297,
+            "y": 200
+        },
+        "area": 43.5,
+        "perimeter": 25.071067690849304,
+        "circularity": 0.869667943579849,
+        "aspect_ratio": 0.7777777777777778,
+        "solidity": 0.9886363636363636,
+        "eccentricity": 0.41428894201018585,
+        "mean_intensity_gray": 81.96428571428571,
+        "std_dev_intensity_gray": 8.922212020958687,
+        "peak_intensity_gray": 103.0,
+        "mean_b": 81.35714285714285,
+        "mean_g": 89.51785714285714,
+        "mean_r": 67.33928571428571
+    },
+    {
+        "object_id": 10,
+        "bounding_box": {
+            "x": 466,
+            "y": 192,
+            "w": 26,
+            "h": 18
+        },
+        "center": {
+            "x": 479,
+            "y": 200
+        },
+        "area": 244.5,
+        "perimeter": 70.18376529216766,
+        "circularity": 0.6237569526786567,
+        "aspect_ratio": 1.4444444444444444,
+        "solidity": 0.8874773139745916,
+        "eccentricity": 0.8600468534057508,
+        "mean_intensity_gray": 78.27272727272727,
+        "std_dev_intensity_gray": 4.34031647549329,
+        "peak_intensity_gray": 88.0,
+        "mean_b": 81.69454545454545,
+        "mean_g": 88.77454545454546,
+        "mean_r": 56.276363636363634
+    },
+    {
+        "object_id": 11,
+        "bounding_box": {
+            "x": 250,
+            "y": 192,
+            "w": 16,
+            "h": 10
+        },
+        "center": {
+            "x": 258,
+            "y": 196
+        },
+        "area": 91.0,
+        "perimeter": 40.97056245803833,
+        "circularity": 0.6812513941752723,
+        "aspect_ratio": 1.6,
+        "solidity": 0.9191919191919192,
+        "eccentricity": 0.8005662492221974,
+        "mean_intensity_gray": 84.2,
+        "std_dev_intensity_gray": 9.710163372841492,
+        "peak_intensity_gray": 107.0,
+        "mean_b": 89.4090909090909,
+        "mean_g": 94.22727272727272,
+        "mean_r": 62.46363636363636
+    },
+    {
+        "object_id": 12,
+        "bounding_box": {
+            "x": 300,
+            "y": 188,
+            "w": 7,
+            "h": 9
+        },
+        "center": {
+            "x": 302,
+            "y": 192
+        },
+        "area": 25.5,
+        "perimeter": 23.899494767189026,
+        "circularity": 0.5610125856496074,
+        "aspect_ratio": 0.7777777777777778,
+        "solidity": 0.8095238095238095,
+        "eccentricity": 0.8455793794055967,
+        "mean_intensity_gray": 75.21621621621622,
+        "std_dev_intensity_gray": 2.3148770924715594,
+        "peak_intensity_gray": 80.0,
+        "mean_b": 77.86486486486487,
+        "mean_g": 80.97297297297298,
+        "mean_r": 62.56756756756757
+    },
+    {
+        "object_id": 13,
+        "bounding_box": {
+            "x": 386,
+            "y": 163,
+            "w": 30,
+            "h": 22
+        },
+        "center": {
+            "x": 399,
+            "y": 173
+        },
+        "area": 221.0,
+        "perimeter": 84.42640626430511,
+        "circularity": 0.38962384795267413,
+        "aspect_ratio": 1.3636363636363635,
+        "solidity": 0.728171334431631,
+        "eccentricity": 0.9361013974498488,
+        "mean_intensity_gray": 99.10077519379846,
+        "std_dev_intensity_gray": 11.28272670411253,
+        "peak_intensity_gray": 121.0,
+        "mean_b": 103.53488372093022,
+        "mean_g": 107.6046511627907,
+        "mean_r": 80.80232558139535
+    },
+    {
+        "object_id": 14,
+        "bounding_box": {
+            "x": 265,
+            "y": 149,
+            "w": 11,
+            "h": 11
+        },
+        "center": {
+            "x": 269,
+            "y": 153
+        },
+        "area": 59.5,
+        "perimeter": 33.21320307254791,
+        "circularity": 0.6778058425112607,
+        "aspect_ratio": 1.0,
+        "solidity": 0.9296875,
+        "eccentricity": 0.8742323631918565,
+        "mean_intensity_gray": 114.83783783783784,
+        "std_dev_intensity_gray": 11.769207448834557,
+        "peak_intensity_gray": 135.0,
+        "mean_b": 113.24324324324326,
+        "mean_g": 123.43243243243244,
+        "mean_r": 98.51351351351352
+    },
+    {
+        "object_id": 15,
+        "bounding_box": {
+            "x": 412,
+            "y": 147,
+            "w": 5,
+            "h": 7
+        },
+        "center": {
+            "x": 414,
+            "y": 149
+        },
+        "area": 16.0,
+        "perimeter": 18.485281229019165,
+        "circularity": 0.5884068531993125,
+        "aspect_ratio": 0.7142857142857143,
+        "solidity": 0.8205128205128205,
+        "eccentricity": 0.7507819511869184,
+        "mean_intensity_gray": 132.72,
+        "std_dev_intensity_gray": 5.8823124704491665,
+        "peak_intensity_gray": 138.0,
+        "mean_b": 118.16,
+        "mean_g": 138.44,
+        "mean_r": 126.88000000000001
+    },
+    {
+        "object_id": 16,
+        "bounding_box": {
+            "x": 326,
+            "y": 141,
+            "w": 156,
+            "h": 101
+        },
+        "center": {
+            "x": 406,
+            "y": 197
+        },
+        "area": 4226.5,
+        "perimeter": 580.0559105873108,
+        "circularity": 0.157852340048682,
+        "aspect_ratio": 1.5445544554455446,
+        "solidity": 0.5620345744680851,
+        "eccentricity": 0.9238445646791913,
+        "mean_intensity_gray": 106.67359713838587,
+        "std_dev_intensity_gray": 18.822083745834863,
+        "peak_intensity_gray": 149.0,
+        "mean_b": 103.9427677174156,
+        "mean_g": 118.27431254191818,
+        "mean_r": 84.98837469260005
+    },
+    {
+        "object_id": 17,
+        "bounding_box": {
+            "x": 273,
+            "y": 131,
+            "w": 7,
+            "h": 14
+        },
+        "center": {
+            "x": 276,
+            "y": 138
+        },
+        "area": 32.0,
+        "perimeter": 35.79898929595947,
+        "circularity": 0.3137749805777273,
+        "aspect_ratio": 0.5,
+        "solidity": 0.5818181818181818,
+        "eccentricity": 0.7994152875605366,
+        "mean_intensity_gray": 124.52083333333333,
+        "std_dev_intensity_gray": 3.4820347459815255,
+        "peak_intensity_gray": 131.0,
+        "mean_b": 117.10416666666666,
+        "mean_g": 131.04166666666666,
+        "mean_r": 114.70833333333333
+    },
+    {
+        "object_id": 18,
+        "bounding_box": {
+            "x": 259,
+            "y": 130,
+            "w": 5,
+            "h": 6
+        },
+        "center": {
+            "x": 261,
+            "y": 132
+        },
+        "area": 11.0,
+        "perimeter": 14.485281229019165,
+        "circularity": 0.6587925608735429,
+        "aspect_ratio": 0.8333333333333334,
+        "solidity": 0.8461538461538461,
+        "eccentricity": 0.7796227592852225,
+        "mean_intensity_gray": 110.22222222222221,
+        "std_dev_intensity_gray": 3.0102704853656017,
+        "peak_intensity_gray": 115.0,
+        "mean_b": 108.77777777777777,
+        "mean_g": 116.88888888888889,
+        "mean_r": 97.44444444444444
+    },
+    {
+        "object_id": 19,
+        "bounding_box": {
+            "x": 390,
+            "y": 126,
+            "w": 5,
+            "h": 4
+        },
+        "center": {
+            "x": 391,
+            "y": 127
+        },
+        "area": 6.5,
+        "perimeter": 11.071067690849304,
+        "circularity": 0.6664141476791389,
+        "aspect_ratio": 1.25,
+        "solidity": 0.8666666666666667,
+        "eccentricity": 0.7635881118698619,
+        "mean_intensity_gray": 160.0,
+        "std_dev_intensity_gray": 1.914854215512043,
+        "peak_intensity_gray": 162.0,
+        "mean_b": 132.41666666666666,
+        "mean_g": 163.5,
+        "mean_r": 163.66666666666666
+    },
+    {
+        "object_id": 20,
+        "bounding_box": {
+            "x": 487,
+            "y": 123,
+            "w": 39,
+            "h": 133
+        },
+        "center": {
+            "x": 510,
+            "y": 184
+        },
+        "area": 1978.0,
+        "perimeter": 366.190905213356,
+        "circularity": 0.1853621437547232,
+        "aspect_ratio": 0.2932330827067669,
+        "solidity": 0.6893186966370448,
+        "eccentricity": 0.9694146795325144,
+        "mean_intensity_gray": 82.2874531835206,
+        "std_dev_intensity_gray": 11.528938994447708,
+        "peak_intensity_gray": 119.0,
+        "mean_b": 77.08473782771536,
+        "mean_g": 96.09878277153558,
+        "mean_r": 57.16947565543071
+    },
+    {
+        "object_id": 21,
+        "bounding_box": {
+            "x": 284,
+            "y": 121,
+            "w": 9,
+            "h": 9
+        },
+        "center": {
+            "x": 287,
+            "y": 124
+        },
+        "area": 30.5,
+        "perimeter": 27.55634868144989,
+        "circularity": 0.5047384160970307,
+        "aspect_ratio": 1.0,
+        "solidity": 0.782051282051282,
+        "eccentricity": 0.7913732043937597,
+        "mean_intensity_gray": 142.3953488372093,
+        "std_dev_intensity_gray": 5.4820618039655855,
+        "peak_intensity_gray": 152.0,
+        "mean_b": 125.11627906976744,
+        "mean_g": 146.2093023255814,
+        "mean_r": 141.51162790697674
+    },
+    {
+        "object_id": 22,
+        "bounding_box": {
+            "x": 433,
+            "y": 114,
+            "w": 17,
+            "h": 18
+        },
+        "center": {
+            "x": 440,
+            "y": 121
+        },
+        "area": 135.5,
+        "perimeter": 74.66904675960541,
+        "circularity": 0.3053992351692408,
+        "aspect_ratio": 0.9444444444444444,
+        "solidity": 0.7344173441734417,
+        "eccentricity": 0.8000359479415761,
+        "mean_intensity_gray": 163.35329341317367,
+        "std_dev_intensity_gray": 3.06628926749995,
+        "peak_intensity_gray": 169.0,
+        "mean_b": 140.5808383233533,
+        "mean_g": 170.52095808383234,
+        "mean_r": 157.11976047904193
+    },
+    {
+        "object_id": 23,
+        "bounding_box": {
+            "x": 388,
+            "y": 104,
+            "w": 37,
+            "h": 24
+        },
+        "center": {
+            "x": 408,
+            "y": 114
+        },
+        "area": 411.5,
+        "perimeter": 102.32590055465698,
+        "circularity": 0.49386534523687425,
+        "aspect_ratio": 1.5416666666666667,
+        "solidity": 0.8108374384236453,
+        "eccentricity": 0.7969076257749711,
+        "mean_intensity_gray": 175.76973684210526,
+        "std_dev_intensity_gray": 3.6451188127159457,
+        "peak_intensity_gray": 184.0,
+        "mean_b": 141.9035087719298,
+        "mean_g": 179.0657894736842,
+        "mean_r": 182.28070175438594
+    },
+    {
+        "object_id": 24,
+        "bounding_box": {
+            "x": 296,
+            "y": 103,
+            "w": 7,
+            "h": 7
+        },
+        "center": {
+            "x": 298,
+            "y": 105
+        },
+        "area": 18.0,
+        "perimeter": 19.313708305358887,
+        "circularity": 0.6063886071676929,
+        "aspect_ratio": 1.0,
+        "solidity": 0.9,
+        "eccentricity": 0.9161747895167086,
+        "mean_intensity_gray": 141.33333333333331,
+        "std_dev_intensity_gray": 0.8164965809306964,
+        "peak_intensity_gray": 143.0,
+        "mean_b": 126.66666666666666,
+        "mean_g": 149.1851851851852,
+        "mean_r": 131.33333333333331
+    },
+    {
+        "object_id": 25,
+        "bounding_box": {
+            "x": 428,
+            "y": 92,
+            "w": 7,
+            "h": 6
+        },
+        "center": {
+            "x": 430,
+            "y": 94
+        },
+        "area": 17.0,
+        "perimeter": 17.313708305358887,
+        "circularity": 0.7126537792355527,
+        "aspect_ratio": 1.1666666666666667,
+        "solidity": 0.8947368421052632,
+        "eccentricity": 0.765734739725957,
+        "mean_intensity_gray": 177.48,
+        "std_dev_intensity_gray": 0.8541662601660348,
+        "peak_intensity_gray": 179.0,
+        "mean_b": 147.20000000000002,
+        "mean_g": 179.92000000000002,
+        "mean_r": 184.16
+    },
+    {
+        "object_id": 26,
+        "bounding_box": {
+            "x": 322,
+            "y": 86,
+            "w": 8,
+            "h": 8
+        },
+        "center": {
+            "x": 325,
+            "y": 89
+        },
+        "area": 32.5,
+        "perimeter": 22.72792160511017,
+        "circularity": 0.7906308923990024,
+        "aspect_ratio": 1.0,
+        "solidity": 0.9285714285714286,
+        "eccentricity": 0.5477790464947045,
+        "mean_intensity_gray": 154.74418604651163,
+        "std_dev_intensity_gray": 1.5264036354802928,
+        "peak_intensity_gray": 158.0,
+        "mean_b": 135.69767441860466,
+        "mean_g": 161.46511627906978,
+        "mean_r": 148.81395348837208
+    },
+    {
+        "object_id": 27,
+        "bounding_box": {
+            "x": 336,
+            "y": 75,
+            "w": 12,
+            "h": 14
+        },
+        "center": {
+            "x": 341,
+            "y": 80
+        },
+        "area": 46.0,
+        "perimeter": 39.79898941516876,
+        "circularity": 0.3649417973899231,
+        "aspect_ratio": 0.8571428571428571,
+        "solidity": 0.6764705882352942,
+        "eccentricity": 0.851013400127021,
+        "mean_intensity_gray": 164.171875,
+        "std_dev_intensity_gray": 3.1402362943534996,
+        "peak_intensity_gray": 171.0,
+        "mean_b": 145.75,
+        "mean_g": 168.640625,
+        "mean_r": 162.484375
+    },
+    {
+        "object_id": 28,
+        "bounding_box": {
+            "x": 278,
+            "y": 73,
+            "w": 155,
+            "h": 120
+        },
+        "center": {
+            "x": 355,
+            "y": 131
+        },
+        "area": 6403.0,
+        "perimeter": 905.1757475137711,
+        "circularity": 0.0982036313186797,
+        "aspect_ratio": 1.2916666666666667,
+        "solidity": 0.5858992542434918,
+        "eccentricity": 0.8354956549508246,
+        "mean_intensity_gray": 162.58066892588772,
+        "std_dev_intensity_gray": 29.102281191616658,
+        "peak_intensity_gray": 211.0,
+        "mean_b": 136.98791807867983,
+        "mean_g": 169.49948430823633,
+        "mean_r": 158.72152644762045
+    },
+    {
+        "object_id": 29,
+        "bounding_box": {
+            "x": 210,
+            "y": 48,
+            "w": 200,
+            "h": 272
+        },
+        "center": {
+            "x": 288,
+            "y": 208
+        },
+        "area": 13427.0,
+        "perimeter": 2095.145430445671,
+        "circularity": 0.03843797542930079,
+        "aspect_ratio": 0.7352941176470589,
+        "solidity": 0.32955758728600354,
+        "eccentricity": 0.36026396816383705,
+        "mean_intensity_gray": 105.78511069208743,
+        "std_dev_intensity_gray": 20.56988514757087,
+        "peak_intensity_gray": 171.0,
+        "mean_b": 100.31489629164047,
+        "mean_g": 116.71220057266568,
+        "mean_r": 86.44765695928486
+    }
+]

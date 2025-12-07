@@ -1,0 +1,77 @@
+[
+    {
+        "object_id": 0,
+        "bounding_box": {
+            "x": 325,
+            "y": 388,
+            "w": 74,
+            "h": 22
+        },
+        "center": {
+            "x": 358,
+            "y": 398
+        },
+        "area": 933.5,
+        "perimeter": 181.09545266628265,
+        "circularity": 0.3576918919472044,
+        "aspect_ratio": 3.3636363636363638,
+        "solidity": 0.8428893905191873,
+        "eccentricity": 0.9625023546544751,
+        "mean_intensity_gray": 149.97332015810275,
+        "std_dev_intensity_gray": 5.501013169730631,
+        "peak_intensity_gray": 161.0,
+        "mean_b": 138.3794466403162,
+        "mean_g": 152.32509881422925,
+        "mean_r": 149.77371541501975
+    },
+    {
+        "object_id": 1,
+        "bounding_box": {
+            "x": 286,
+            "y": 352,
+            "w": 120,
+            "h": 30
+        },
+        "center": {
+            "x": 346,
+            "y": 365
+        },
+        "area": 2434.5,
+        "perimeter": 295.37972366809845,
+        "circularity": 0.3506374370044152,
+        "aspect_ratio": 4.0,
+        "solidity": 0.8803109745073223,
+        "eccentricity": 0.9755832103151825,
+        "mean_intensity_gray": 158.9169914263445,
+        "std_dev_intensity_gray": 9.159990418318282,
+        "peak_intensity_gray": 176.0,
+        "mean_b": 142.69446609508964,
+        "mean_g": 161.3133281371785,
+        "mean_r": 160.3265783320343
+    },
+    {
+        "object_id": 2,
+        "bounding_box": {
+            "x": 289,
+            "y": 312,
+            "w": 121,
+            "h": 30
+        },
+        "center": {
+            "x": 347,
+            "y": 327
+        },
+        "area": 2503.5,
+        "perimeter": 295.0365777015686,
+        "circularity": 0.3614146362153955,
+        "aspect_ratio": 4.033333333333333,
+        "solidity": 0.910694798108403,
+        "eccentricity": 0.9751427872455645,
+        "mean_intensity_gray": 156.74183750949126,
+        "std_dev_intensity_gray": 12.240137887907299,
+        "peak_intensity_gray": 176.0,
+        "mean_b": 144.07175398633257,
+        "mean_g": 160.2441154138193,
+        "mean_r": 154.66666666666669
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "object_id": 1,
+        "bounding_box": {
+            "x": 187,
+            "y": 499,
+            "w": 7,
+            "h": 5
+        },
+        "center": {
+            "x": 189,
+            "y": 501
+        },
+        "area": 20.5,
+        "perimeter": 17.071067690849304,
+        "circularity": 0.8839798310353423,
+        "aspect_ratio": 1.4,
+        "solidity": 1.0,
+        "eccentricity": 0.6645070211425683,
+        "mean_intensity_gray": 66.89655172413794,
+        "std_dev_intensity_gray": 37.713388117243014,
+        "peak_intensity_gray": 178.0,
+        "mean_b": 61.89655172413793,
+        "mean_g": 65.89655172413794,
+        "mean_r": 70.89655172413794,
+        "label": "Yıldız"
+    },
+    {
+        "object_id": 2,
+        "bounding_box": {
+            "x": 335,
+            "y": 467,
+            "w": 4,
+            "h": 4
+        },
+        "center": {
+            "x": 336,
+            "y": 468
+        },
+        "area": 5.5,
+        "perimeter": 9.071067690849304,
+        "circularity": 0.8399544551501442,
+        "aspect_ratio": 1.0,
+        "solidity": 1.0,
+        "eccentricity": 0.0,
+        "mean_intensity_gray": 171.20000000000002,
+        "std_dev_intensity_gray": 42.59765251748028,
+        "peak_intensity_gray": 232.0,
+        "mean_b": 159.20000000000002,
+        "mean_g": 171.20000000000002,
+        "mean_r": 177.0
+    },
+    {
+        "object_id": 5,
+        "bounding_box": {
+            "x": 361,
+            "y": 450,
+            "w": 26,
+            "h": 24
+        },
+        "center": {
+            "x": 373,
+            "y": 461
+        },
+        "area": 460.0,
+        "perimeter": 79.5979790687561,
+        "circularity": 0.9123544880092856,
+        "aspect_ratio": 1.0833333333333333,
+        "solidity": 0.9860664523043944,
+        "eccentricity": 0.25747332850993304,
+        "mean_intensity_gray": 186.03636363636363,
+        "std_dev_intensity_gray": 34.29949333944326,
+        "peak_intensity_gray": 249.0,
+        "mean_b": 179.6989898989899,
+        "mean_g": 190.3010101010101,
+        "mean_r": 179.97373737373738,
+        "label": "Gezegen"
+    },
+    {
+        "object_id": 6,
+        "bounding_box": {
+            "x": 202,
+            "y": 6,
+            "w": 4,
+            "h": 4
+        },
+        "center": {
+            "x": 203,
+            "y": 7
+        },
+        "area": 6.5,
+        "perimeter": 10.242640614509583,
+        "circularity": 0.778573021914597,
+        "aspect_ratio": 1.0,
+        "solidity": 0.9285714285714286,
+        "eccentricity": 0.46511210334578734,
+        "mean_intensity_gray": 39.166666666666664,
+        "std_dev_intensity_gray": 10.147522959925857,
+        "peak_intensity_gray": 55.0,
+        "mean_b": 35.166666666666664,
+        "mean_g": 38.166666666666664,
+        "mean_r": 42.166666666666664
+    }
+]
