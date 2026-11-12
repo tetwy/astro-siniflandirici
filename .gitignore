@@ -1,2 +1,4 @@
 ﻿backend/outputs/
 
+__pycache__/
+*.pyc
