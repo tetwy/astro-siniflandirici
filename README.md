@@ -10,6 +10,8 @@
   <img src="docs/onizleme.png" alt="Astro Classifier Uygulama Arayüzü" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
 </p>
 
+<!-- TODO: demo GIF -->
+
 ## 📖 Proje Hakkında
 
 Bu proje, amatör veya profesyonel astronomi fotoğraflarını işleyerek içerisindeki nesneleri **Yıldız, Galaksi, Bulutsu, Gezegen** gibi sınıflara ayıran uçtan uca (end-to-end) bir çözümdür.
@@ -50,8 +52,9 @@ Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 ### 1. Depoyu Klonlayın
 
 ```bash
-git clone https://github.com/KULLANICI_ADINIZ/astro-siniflandirici.git
+git clone https://github.com/tetwy/astro-siniflandirici.git
 cd astro-siniflandirici
+```
 
 ### 2\. Backend Kurulumu (Terminal 1)
 
@@ -69,11 +72,14 @@ venv\Scripts\activate
 # Bağımlılıkları yükleyin
 pip install flask flask-cors opencv-python scikit-learn pandas numpy joblib
 
+# Yalnızca modeli yeniden eğitmek için (model_egitici.py) gerekli:
+# pip install matplotlib seaborn
+
 # API Sunucusunu başlatın
 python image_service.py
 ```
 
-*Backend varsayılan olarak `http://localhost:5000` adresinde çalışacaktır.*
+*Backend `http://localhost:5000` adresinde çalışır (`/classify` uç noktası). Eğitilmiş v2 modelleri `backend/models` içinde hazır gelir.*
 
 ### 3\. Frontend Kurulumu (Terminal 2)
 
@@ -89,7 +95,16 @@ npm install
 npm run dev
 ```
 
-*Frontend genellikle `http://localhost:5173` adresinde açılacaktır.*
+*Frontend `http://localhost:8080` adresinde açılır (`frontend/vite.config.ts`) ve API'ye `http://127.0.0.1:5000/classify` üzerinden bağlanır.*
+
+### 4\. Modeli Yeniden Eğitme (isteğe bağlı)
+
+```bash
+# backend/ klasöründe
+python star_detector.py   # assets/ altındaki görüntülerden outputs/features/ içine özellik JSON'ları üretir
+python veri_birlestir.py  # etiketli nesneleri eğitim_veriseti.csv dosyasında birleştirir
+python model_egitici.py   # models/ klasörüne v2 modelini yazar
+```
 
 -----
 
@@ -100,7 +115,7 @@ astro-siniflandirici/
 ├── backend/                 # Python API ve AI Modelleri
 │   ├── assets/              # Eğitim için ham görüntüler
 │   ├── models/              # Eğitilmiş .joblib modelleri (v2)
-│   ├── outputs/             # Debug görüntüleri ve özellik çıktıları
+│   ├── outputs/             # star_detector.py çalışınca oluşan debug görüntüleri ve özellik JSON'ları (git'te izlenmez)
 │   ├── image_service.py     # Flask API Sunucusu (Giriş Noktası)
 │   ├── star_detector.py     # Görüntü İşleme Modülü
 │   ├── model_egitici.py     # Model Eğitim Scripti
@@ -121,11 +136,3 @@ Bu proje **MIT Lisansı** ile lisanslanmıştır.
 MIT Lisansı, bu yazılımın kopyasını alan herhangi bir kişiye; yazılımı kullanma, kopyalama, değiştirme, birleştirme, yayımlama, dağıtma, alt lisans verme ve/veya satma haklarını sınırsız bir şekilde verir.
 
 Daha fazla detay için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
-
-```
-
-### Yapman gereken tek şey:
-* `git clone` kısmındaki `KULLANICI_ADINIZ` bölümünü kendi GitHub kullanıcı adınla değiştirmeyi unutma.
-
-Başka bir ekleme yapmamı ister misin? (Örneğin: "Katkıda Bulunma" rehberi veya "Gelecek Planları" gibi).
-```
