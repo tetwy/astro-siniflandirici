@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  // "componentTagger" ve "lovable-tagger" kısımları kaldırıldı
+  // The "componentTagger" and "lovable-tagger" parts were removed
   plugins: [react()].filter(Boolean),
   resolve: {
     alias: {

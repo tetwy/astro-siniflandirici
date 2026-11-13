@@ -1,4 +1,4 @@
-# --- GENEL SİSTEM DOSYALARI ---
+# --- GENERAL SYSTEM FILES ---
 .DS_Store
 Thumbs.db
 
@@ -25,7 +25,7 @@ env/
 .vscode/
 .idea/
 
-# --- ÇIKTILAR ---
+# --- OUTPUTS ---
 Eğer eğitim verisini ve çıktıları da yüklemek istemezseniz bunları açın:
 backend/outputs/
 backend/eğitim_veriseti.csv

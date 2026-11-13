@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Card } from '@/components/ui/card';
-// Grafik için Recharts ve UI bileşenlerini içe aktar
+// Import Recharts and the UI components for the chart
 import { Pie, PieChart, Cell, Tooltip, Legend } from "recharts";
 import {
   ChartContainer,
@@ -17,16 +17,16 @@ interface ClassificationResultProps {
   classCounts: Record<string, number>;
 }
 
-// Grafiğimizdeki her sınıf için bir renk tanımlayalım.
-// Bu renkler temanızdaki (src/index.css) CSS değişkenlerinden gelir.
+// Define a color for each class in the chart.
+// These colors come from the CSS variables in the theme (src/index.css).
 const chartConfig = {
   Yıldız: { label: "Yıldız", color: "hsl(var(--primary))" }, // Mavi
   Bulutsu: { label: "Bulutsu", color: "hsl(var(--accent))" }, // Turuncu
   Galaksi: { label: "Galaksi", color: "hsl(271 91% 65%)" }, // Mor
-  "Kuyruklu Yıldız": { label: "Kuyruklu Yıldız", color: "hsl(120 71% 50%)" }, // Yeşil
-  Gezegen: { label: "Gezegen", color: "hsl(180 71% 50%)" }, // Camgöbeği
-  Gürültü: { label: "Gürültü", color: "hsl(var(--destructive))" }, // Kırmızı
-  // Bilinmeyen bir sınıf gelirse diye bir yedek renk
+  "Kuyruklu Yıldız": { label: "Kuyruklu Yıldız", color: "hsl(120 71% 50%)" }, // Green
+  Gezegen: { label: "Gezegen", color: "hsl(180 71% 50%)" }, // Cyan
+  Gürültü: { label: "Gürültü", color: "hsl(var(--destructive))" }, // Red
+  // A fallback color in case an unknown class shows up
   default: { label: "Diğer", color: "hsl(var(--muted-foreground))" }
 } satisfies ChartConfig;
 
@@ -36,18 +36,18 @@ export const ClassificationResult = ({
   classCounts 
 }: ClassificationResultProps) => {
 
-  // Recharts, { "Yıldız": 355 } gibi bir obje yerine
-  // [{ name: "Yıldız", count: 355, fill: "hsl(...)" }] gibi bir dizi bekler.
-  // Bu useMemo hook'u, classCounts her değiştiğinde bu dönüşümü yapar.
+  // Instead of an object like { "Yıldız": 355 }, Recharts expects
+  // an array like [{ name: "Yıldız", count: 355, fill: "hsl(...)" }].
+  // This useMemo hook does the conversion whenever classCounts changes.
   const chartData = useMemo(() => {
-    // Sınıfları, 'chartConfig'da tanımladığımız sıraya göre sıralamak
-    // ve bilinmeyenleri sona eklemek için:
+    // To sort the classes in the order defined in 'chartConfig'
+    // and append unknown ones at the end:
     const classOrder = Object.keys(chartConfig);
     
     const sortedEntries = Object.entries(classCounts).sort(([aName], [bName]) => {
       const aIndex = classOrder.indexOf(aName);
       const bIndex = classOrder.indexOf(bName);
-      // Bilinmeyen sınıfları sona at
+      // Push unknown classes to the end
       if (aIndex === -1) return 1;
       if (bIndex === -1) return -1;
       return aIndex - bIndex;
@@ -56,7 +56,7 @@ export const ClassificationResult = ({
     return sortedEntries.map(([name, count]) => ({
       name: name,
       count: count,
-      // Renk atamasını config'den yap, bulunamazsa varsayılanı kullan
+      // Take the color from the config, use the default if it is not found
       fill: (chartConfig[name as keyof typeof chartConfig] || chartConfig.default).color,
     }));
   }, [classCounts]);
@@ -128,7 +128,7 @@ export const ClassificationResult = ({
               </div>
             )}
 
-            {/* --- GÜNCELLENMİŞ LİSTE GÖRÜNÜMÜ --- */}
+            {/* --- UPDATED LIST VIEW --- */}
             {chartData.length <= 1 && (
               <h4 className="text-sm font-medium text-muted-foreground">Sayılar:</h4>
             )}
@@ -139,7 +139,7 @@ export const ClassificationResult = ({
                   className="flex items-center justify-between p-3 rounded-lg bg-secondary/50 border border-border hover:bg-secondary/70 transition-colors"
                 >
                   <div className="flex items-center gap-2">
-                    {/* Renk noktası */}
+                    {/* Color dot */}
                     <div 
                       className="h-3 w-3 rounded-full" 
                       style={{ backgroundColor: fill }} 

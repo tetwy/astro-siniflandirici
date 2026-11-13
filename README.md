@@ -1,34 +1,34 @@
-# 🌌 Astronomik Nesne Sınıflandırıcı (Astro Classifier)
+# Astro Classifier (Astronomical Object Classifier)
 
-> **Derin uzay fotoğraflarını analiz eden, gök cisimlerini tespit edip sınıflandıran Yapay Zeka destekli Full-Stack web uygulaması.**
+> **A full-stack web app that analyzes deep-space photos, detects celestial objects and classifies them.**
 
-![Status](https://img.shields.io/badge/Status-Tamamlandı-success?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
 ![Version](https://img.shields.io/badge/Version-v2.0-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 <p align="center">
-  <img src="docs/onizleme.png" alt="Astro Classifier Uygulama Arayüzü" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+  <img src="docs/onizleme.png" alt="Astro Classifier app interface" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
 </p>
 
 <!-- TODO: demo GIF -->
 
-## 📖 Proje Hakkında
+## About the Project
 
-Bu proje, amatör veya profesyonel astronomi fotoğraflarını işleyerek içerisindeki nesneleri **Yıldız, Galaksi, Bulutsu, Gezegen** gibi sınıflara ayıran uçtan uca (end-to-end) bir çözümdür.
+I built this project to take amateur or professional astronomy photos and sort the objects in them into classes such as **Star, Galaxy, Nebula and Planet**. It is an end-to-end solution: upload a photo, get the classified objects back.
 
-Python (Flask) tabanlı güçlü bir görüntü işleme arka ucu ve React (Vite) ile geliştirilmiş modern, uzay temalı bir ön yüze sahiptir.
+The backend is a Python (Flask) image processing service, and the frontend is a space-themed React (Vite) interface.
 
-### 🚀 Temel Özellikler
+### Main Features
 
-* **🔍 Akıllı Nesne Tespiti:** OpenCV kullanarak görüntüdeki ışık kaynaklarını arka plandan ayırır ve segmentlere böler.
-* **🧠 Yapay Zeka Sınıflandırma:** Eğitilmiş **RandomForest (v2)** modeli ile nesneleri 6 farklı sınıfa ayırır.
-* **🎨 Renkli Görselleştirme:** Tespit edilen nesneleri sınıflarına göre farklı renklerle (Örn: Galaksi=Mor, Yıldız=Mavi) çerçeveler.
-* **📊 İstatistiksel Analiz:** Görüntüdeki dağılımı interaktif grafikler (Halka Grafik) ve detaylı listelerle sunar.
-* **✨ Modern Arayüz:** Sürükle-bırak destekli, karanlık mod (dark mode) ve "glassmorphism" etkili şık tasarım.
+* **Object detection:** uses OpenCV to separate light sources from the background and split them into segments.
+* **Classification:** a trained **RandomForest (v2)** model assigns each object to one of 6 classes.
+* **Color-coded results:** draws a frame around each detected object in a color that depends on its class (for example Galaxy = purple, Star = blue).
+* **Statistics:** shows the distribution in the image with an interactive donut chart and a detailed list.
+* **Interface:** supports drag and drop, has a dark mode and a "glassmorphism" look.
 
 ---
 
-## 🛠️ Teknolojiler
+## Technologies
 
 ### Backend
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
@@ -45,94 +45,94 @@ Python (Flask) tabanlı güçlü bir görüntü işleme arka ucu ve React (Vite)
 
 ---
 
-## ⚙️ Kurulum ve Çalıştırma
+## Setup and Running
 
-Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin.
+Follow these steps to run the project on your own machine.
 
-### 1. Depoyu Klonlayın
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/tetwy/astro-siniflandirici.git
 cd astro-siniflandirici
 ```
 
-### 2\. Backend Kurulumu (Terminal 1)
+### 2\. Backend setup (Terminal 1)
 
-Önce Python sanal ortamını oluşturun ve gerekli kütüphaneleri yükleyin.
+First create a Python virtual environment and install the required libraries.
 
 ```bash
 cd backend
 
 python -m venv venv
-# Windows için aktivasyon:
+# Activate on Windows:
 venv\Scripts\activate
-# Mac/Linux için aktivasyon:
+# Activate on Mac/Linux:
 # source venv/bin/activate
 
-# Bağımlılıkları yükleyin
+# Install the dependencies
 pip install flask flask-cors opencv-python scikit-learn pandas numpy joblib
 
-# Yalnızca modeli yeniden eğitmek için (model_egitici.py) gerekli:
+# Only needed if you want to retrain the model (model_egitici.py):
 # pip install matplotlib seaborn
 
-# API Sunucusunu başlatın
+# Start the API server
 python image_service.py
 ```
 
-*Backend `http://localhost:5000` adresinde çalışır (`/classify` uç noktası). Eğitilmiş v2 modelleri `backend/models` içinde hazır gelir.*
+*The backend runs at `http://localhost:5000` (the `/classify` endpoint). The trained v2 models are included in `backend/models`.*
 
-### 3\. Frontend Kurulumu (Terminal 2)
+### 3\. Frontend setup (Terminal 2)
 
-Yeni bir terminal penceresi açın ve React uygulamasını başlatın.
+Open a new terminal window and start the React app.
 
 ```bash
 cd frontend
 
-# Paketleri yükleyin
+# Install the packages
 npm install
 
-# Uygulamayı başlatın
+# Start the app
 npm run dev
 ```
 
-*Frontend `http://localhost:8080` adresinde açılır (`frontend/vite.config.ts`) ve API'ye `http://127.0.0.1:5000/classify` üzerinden bağlanır.*
+*The frontend opens at `http://localhost:8080` (`frontend/vite.config.ts`) and talks to the API at `http://127.0.0.1:5000/classify`.*
 
-### 4\. Modeli Yeniden Eğitme (isteğe bağlı)
+### 4\. Retraining the model (optional)
 
 ```bash
-# backend/ klasöründe
-python star_detector.py   # assets/ altındaki görüntülerden outputs/features/ içine özellik JSON'ları üretir
-python veri_birlestir.py  # etiketli nesneleri eğitim_veriseti.csv dosyasında birleştirir
-python model_egitici.py   # models/ klasörüne v2 modelini yazar
+# inside the backend/ folder
+python star_detector.py   # extracts feature JSONs from the images in assets/ into outputs/features/
+python veri_birlestir.py  # merges the labeled objects into eğitim_veriseti.csv
+python model_egitici.py   # writes the v2 model into the models/ folder
 ```
 
 -----
 
-## 📂 Proje Yapısı
+## Project Structure
 
 ```text
 astro-siniflandirici/
-├── backend/                 # Python API ve AI Modelleri
-│   ├── assets/              # Eğitim için ham görüntüler
-│   ├── models/              # Eğitilmiş .joblib modelleri (v2)
-│   ├── outputs/             # star_detector.py çalışınca oluşan debug görüntüleri ve özellik JSON'ları (git'te izlenmez)
-│   ├── image_service.py     # Flask API Sunucusu (Giriş Noktası)
-│   ├── star_detector.py     # Görüntü İşleme Modülü
-│   ├── model_egitici.py     # Model Eğitim Scripti
-│   └── veri_birlestir.py    # Veri Seti Oluşturucu
+├── backend/                 # Python API and AI models
+│   ├── assets/              # Raw training images
+│   ├── models/              # Trained .joblib models (v2)
+│   ├── outputs/             # Debug images and feature JSONs created when star_detector.py runs (not tracked in git)
+│   ├── image_service.py     # Flask API server (entry point)
+│   ├── star_detector.py     # Image processing module
+│   ├── model_egitici.py     # Model training script
+│   └── veri_birlestir.py    # Dataset builder
 │
-├── frontend/                # React Web Arayüzü
-│   ├── src/                 # Kaynak kodlar
-│   ├── public/              # Statik dosyalar
-│   └── ...                  # Config dosyaları
+├── frontend/                # React web interface
+│   ├── src/                 # Source code
+│   ├── public/              # Static files
+│   └── ...                  # Config files
 │
-└── docs/                    # Dokümantasyon görselleri
+└── docs/                    # Documentation images
 ```
 
-## 📄 Lisans
+## License
 
-Bu proje **MIT Lisansı** ile lisanslanmıştır.
+This project is licensed under the **MIT License**.
 
-MIT Lisansı, bu yazılımın kopyasını alan herhangi bir kişiye; yazılımı kullanma, kopyalama, değiştirme, birleştirme, yayımlama, dağıtma, alt lisans verme ve/veya satma haklarını sınırsız bir şekilde verir.
+The MIT License gives anyone who gets a copy of this software unrestricted rights to use, copy, modify, merge, publish, distribute, sublicense and/or sell it.
 
-Daha fazla detay için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
+See the [LICENSE](LICENSE) file for the full text.

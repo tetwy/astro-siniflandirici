@@ -35,7 +35,7 @@ const Index = () => {
       const formData = new FormData();
       formData.append('image', selectedFile);
 
-      // Gerçek API bağlantısı (localhost:5000)
+      // Real API connection (localhost:5000)
       const response = await fetch('http://127.0.0.1:5000/classify', {
         method: 'POST',
         body: formData,
@@ -47,7 +47,7 @@ const Index = () => {
         throw new Error(errorData.error || `API hatası: ${response.statusText}`);
       }
       
-      // Sunucudan gelen JSON verisini al
+      // Get the JSON data returned by the server
       const data = await response.json();
 
       setResult({

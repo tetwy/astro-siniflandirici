@@ -3,8 +3,8 @@ import json
 import base64
 import os
 
-# test etmek istediginiz goruntunun yolunu buraya yazin
-IMAGE_TO_TEST = r"deneme.jpeg" # ornek yol
+# put the path of the image you want to test here
+IMAGE_TO_TEST = r"deneme.jpeg" # example path
 
 API_URL = "http://127.0.0.1:5000/classify"
 DEBUG_IMAGE_OUTPUT = "api_response_debug.jpg"
