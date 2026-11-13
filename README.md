@@ -14,15 +14,15 @@
 
 ## About the Project
 
-I built this project to take amateur or professional astronomy photos and sort the objects in them into classes such as **Star, Galaxy, Nebula and Planet**. It is an end-to-end solution: upload a photo, get the classified objects back.
+I built this project to take amateur or professional astronomy photos and sort the objects in them into classes such as **Star, Galaxy, Nebula and Planet**. It's an end-to-end solution: you upload a photo, and you get the classified objects back.
 
 The backend is a Python (Flask) image processing service, and the frontend is a space-themed React (Vite) interface.
 
 ### Main Features
 
-* **Object detection:** uses OpenCV to separate light sources from the background and split them into segments.
+* **Object detection:** I use OpenCV to separate light sources from the background and split them into segments.
 * **Classification:** a trained **RandomForest (v2)** model assigns each object to one of 6 classes.
-* **Color-coded results:** draws a frame around each detected object in a color that depends on its class (for example Galaxy = purple, Star = blue).
+* **Color-coded results:** it draws a frame around each detected object in a color that depends on its class (for example Galaxy = purple, Star = blue).
 * **Statistics:** shows the distribution in the image with an interactive donut chart and a detailed list.
 * **Interface:** supports drag and drop, has a dark mode and a "glassmorphism" look.
 
@@ -47,7 +47,7 @@ The backend is a Python (Flask) image processing service, and the frontend is a 
 
 ## Setup and Running
 
-Follow these steps to run the project on your own machine.
+Here's how to run the project on your own machine.
 
 ### 1. Clone the repository
 
@@ -133,6 +133,6 @@ astro-siniflandirici/
 
 This project is licensed under the **MIT License**.
 
-The MIT License gives anyone who gets a copy of this software unrestricted rights to use, copy, modify, merge, publish, distribute, sublicense and/or sell it.
+The MIT License lets anyone who gets a copy of this software use, copy, modify, merge, publish, distribute, sublicense and/or sell it, with no restrictions.
 
 See the [LICENSE](LICENSE) file for the full text.
